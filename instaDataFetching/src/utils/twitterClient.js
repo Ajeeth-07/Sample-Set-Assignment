@@ -35,7 +35,7 @@ class TwitterClient{
                 method : 'POST'
             };
 
-            const authHeader = this.oauth.toHeader(this.Oauth.authorize(requestData,{
+            const authHeader = this.oauth.toHeader(this.oauth.authorize(requestData,{
                 key:this.config.accessToken,
                 secret:this.config.tokenSecret
             }));
