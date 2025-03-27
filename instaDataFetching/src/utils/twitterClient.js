@@ -1,7 +1,7 @@
 const crypto = require("crypto");
 const { url } = require("inspector");
 const OAuth = require("oauth-1.0a");
-const axios = requir("axios");
+const axios = require("axios");
 
 class TwitterClient{
     constructor(config){
@@ -9,7 +9,7 @@ class TwitterClient{
         this.baseUrl = 'https://api.twitter.com/2/tweets';
 
 
-        this.Oauth = OAuth({
+        this.oauth = OAuth({
             consumer:{
                 key:config.consumerKey,
                 secret:config.consumerSecret
